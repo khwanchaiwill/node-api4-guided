@@ -9,4 +9,8 @@ server.use(helmet());
 
 server.use('/api', apiRouter);
 
+server.get('/', (req, res) => {
+    res.status(200).json({ Hello: "Full stack Web developer"})
+})
+
 module.exports = server;
